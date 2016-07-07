@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabla de Ryan</title>
+	<meta charset="utf8">
+	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="./css/style.css" >
+	<style>
+
+		h1 {
+			margin-bottom:0.8em;
+		}
+
+		input[type="button"] {
+			float:right;
+		}
+
+		input[type="submit"] {
+			margin-top:1em;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Tabla de distribución de frecuencias</h1>
+			</hr>
+			<div class="home-container">
+				<p>Los datos que introduzcas se añadirán a la lista una vez que presiones Enter. Una vez terminada, presiona Enviar para analizar los datos.</p>
+				<form id="formDataInput">
+					<p>Introduce tus datos:</p>
+					<label>Dato: <input type="text" name="dataInput"/></label>
+				</form>
+				<form id="formData">	
+					<p>Tus datos:</p>
+					<select size="20" class="data-holder" name="dataList">
+					</select>
+					<input type="button" value="Borrar dato" class="btn btn-danger btn-lg " id="delete-data">
+					<input type="submit" value="Enviar" class="btn btn-primary btn-lg">
+				</form>
+			</div>
+			<div class="table-info"></div>
+			<div class="table-container"></div>
+			<div class="table-analyze"></div>
+			<div class="table-data-analyze"></div>
+		</div>
+	</div>
+
+	<footer class="container">
+		<p class="pull-right">Hecho por Argenis Villasmil | <a href="#">Github</a> | <a href="#">Website</a>
+	</footer>
+
+
+	<script src="./js/script.js"></script>
+	<script src="./js/utilities.js"></script>
+</body>
+</html>
